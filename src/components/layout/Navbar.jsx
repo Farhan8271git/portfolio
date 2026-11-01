@@ -14,29 +14,27 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  const hasValidResume =
-    personal.resume?.startsWith("/");
+  const hasValidResume = personal.resume?.startsWith("/");
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
 
       <Container>
         <nav
-          className="flex h-20 items-center justify-between"
+          className="flex h-20 items-center justify-between gap-4"
           aria-label="Main navigation"
         >
-
           {/* Brand */}
           <a
             href="#home"
             onClick={() => handleNavigation("#home")}
-            className="text-2xl font-bold tracking-tight text-white"
+            className="shrink-0 text-xl font-bold tracking-tight text-white sm:text-2xl"
           >
-            Farhan<span className="text-blue-500">.</span>
+            Farhan<span className="text-blue-500"> Nur</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-4 lg:flex xl:gap-7">
 
             {navigation.map((item) => (
               <a
@@ -44,15 +42,12 @@ const Navbar = () => {
                 href={item.href}
                 onClick={() => handleNavigation(item.href)}
                 aria-current={
-                  activeLink === item.href
-                    ? "location"
-                    : undefined
+                  activeLink === item.href ? "location" : undefined
                 }
-                className={`text-sm font-medium transition-colors duration-300 ${
-                  activeLink === item.href
+                className={`whitespace-nowrap text-sm font-medium transition-colors duration-300 ${activeLink === item.href
                     ? "text-blue-400"
                     : "text-slate-400 hover:text-white"
-                }`}
+                  }`}
               >
                 {item.name}
               </a>
@@ -61,31 +56,29 @@ const Navbar = () => {
           </div>
 
           {/* Resume Button */}
-          <div className="hidden md:block">
-
-            {hasValidResume && (
-              <a
-                href={personal.resume}
-                download
-                className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-700"
-              >
-                Resume
-                <FiArrowUpRight />
-              </a>
-            )}
-
-          </div>
+          {hasValidResume && (
+            <a
+              href={personal.resume}
+              download
+              className="hidden shrink-0 items-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700 lg:inline-flex"
+            >
+              Resume
+              <FiArrowUpRight />
+            </a>
+          )}
 
           {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setIsMenuOpen((prev) => !prev)}
             aria-label={
-              isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+              isMenuOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
             }
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
-            className="rounded-lg p-2 text-2xl text-white transition-colors hover:bg-slate-800 md:hidden"
+            className="rounded-lg p-2 text-2xl text-white transition-colors hover:bg-slate-800 lg:hidden"
           >
             {isMenuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -95,15 +88,13 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div
           id="mobile-navigation"
-          className={`overflow-hidden transition-all duration-300 md:hidden ${
-            isMenuOpen
-              ? "max-h-96 border-t border-white/10 py-5 opacity-100"
+          className={`overflow-hidden transition-all duration-300 lg:hidden ${isMenuOpen
+              ? "max-h-[32rem] border-t border-white/10 py-5 opacity-100"
               : "max-h-0 opacity-0"
-          }`}
+            }`}
           aria-hidden={!isMenuOpen}
           inert={!isMenuOpen}
         >
-
           <div className="flex flex-col gap-2">
 
             {navigation.map((item) => (
@@ -112,11 +103,10 @@ const Navbar = () => {
                 href={item.href}
                 tabIndex={isMenuOpen ? 0 : -1}
                 onClick={() => handleNavigation(item.href)}
-                className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
-                  activeLink === item.href
+                className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors ${activeLink === item.href
                     ? "bg-blue-600/10 text-blue-400"
                     : "text-slate-400 hover:bg-slate-800 hover:text-white"
-                }`}
+                  }`}
               >
                 {item.name}
               </a>
@@ -135,11 +125,9 @@ const Navbar = () => {
             )}
 
           </div>
-
         </div>
 
       </Container>
-
     </header>
   );
 };

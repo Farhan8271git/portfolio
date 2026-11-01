@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Farhan Nur portfolio icon</title>
+  <desc id="desc">A navy rounded-square monogram combining the letters F and N in white and blue.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="#020617"/>
+  <rect x="9" y="9" width="238" height="238" rx="57" fill="none" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M57 57h135v22H82v35h91v22H82v63H57z" fill="#F8FAFC"/>
+  <path d="M133 114h23l43 58v-58h25v85h-23l-43-58v58h-25z" fill="url(#accent)"/>
+  <circle cx="199" cy="55" r="10" fill="#60A5FA"/>
+</svg>
