@@ -14,7 +14,7 @@ const personal = {
 
     availability:"Open to Internship & Full-time Opportunities",
 
-    resume:"C:\\Users\\FARHAN\\Desktop\\NUR resume.pdf"
+    resume: "/resume/Farhan-Nur-Resume.pdf"
 
 };
 
