@@ -1,0 +1,148 @@
+const projects = [
+  {
+    id: 1,
+    title: "BharatFasal",
+    category: "Full-Stack Agricultural Marketplace",
+    description:
+      "A full-stack agricultural marketplace connecting farmers, Farmer Producer Organizations (FPOs), and buyers. It brings agricultural listings, buyer demands, mandi price information, procurement workflows, verification, logistics, and dispute management into one platform.",
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "i18next",
+    ],
+    highlights: [
+      "Role-based dashboards for farmers, FPOs, buyers, and administrators.",
+      "Agricultural listings and buyer demand management.",
+      "JWT authentication and role-based authorization.",
+      "MongoDB-backed data models and REST APIs.",
+      "Government mandi price integration.",
+      "Multilingual interface supporting English, Hindi, and Urdu.",
+    ],
+    status: "Functional Prototype",
+    github: "https://github.com/Farhan8271git/bharatfasal",
+    live: null,
+    featured: true,
+  },
+
+  {
+    id: 2,
+    title: "RoomMate Finder",
+    category: "Full-Stack Web Application",
+    description:
+      "A roommate-finding platform that helps users discover shared accommodation by publishing and browsing roommate listings. The application includes authentication interfaces, listing management, user profiles, and a messaging interface.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Axios",
+    ],
+    highlights: [
+      "Create and browse roommate listings.",
+      "Listing details and management pages.",
+      "Authentication and protected frontend routes.",
+      "User profile interface.",
+      "Messaging interface.",
+      "Redux Toolkit for frontend state management.",
+    ],
+    status: "Under Development",
+    github: "https://github.com/Farhan8271git/roomMmate-finder",
+    live: null,
+    featured: true,
+  },
+
+  {
+    id: 3,
+    title: "Todo App",
+    category: "Full-Stack Task Management",
+    description:
+      "A full-stack task management application built with Vanilla JavaScript, Node.js, Express.js, and MongoDB. It provides RESTful APIs for creating, retrieving, updating, deleting, and tracking task completion.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST API",
+    ],
+    highlights: [
+      "Complete CRUD functionality.",
+      "RESTful API development using Express.js.",
+      "MongoDB integration through Mongoose.",
+      "MVC-style backend organization.",
+      "Frontend and backend communication using Fetch API.",
+      "Task completion and update functionality.",
+    ],
+    status: "Completed Learning Project",
+    github: "https://github.com/Farhan8271git/todo-app",
+    live: null,
+    featured: false,
+  },
+
+  {
+    id: 4,
+    title: "Kachra-Snap",
+    category: "AI-Assisted Sustainability Application",
+    description:
+      "A sustainability-focused application designed to help users identify waste categories and understand responsible disposal. It includes a dashboard, scanning interface, scan history, analytics, and disposal guidance. AI classification integration is under development.",
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "JavaScript",
+      "TensorFlow.js (Planned)",
+    ],
+    highlights: [
+      "Waste-scanning interface with image upload and camera UI.",
+      "Dashboard with scan statistics.",
+      "Scan history and analytics interface.",
+      "Waste disposal guidance.",
+      "Planned classification of electronic, organic, and recyclable waste.",
+    ],
+    status: "Under Development",
+    github: "https://github.com/Farhan8271git/Kachra-Snap",
+    live: null,
+    featured: false,
+  },
+
+  {
+    id: 5,
+    title: "Grozo",
+    category: "Frontend Grocery Delivery Application",
+    description:
+      "A responsive grocery shopping application inspired by Blinkit. It provides interactive product browsing, search, category filtering, cart management, delivery location selection, and a simulated checkout experience.",
+    technologies: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS3",
+      "React Icons",
+      "LocalStorage",
+    ],
+    highlights: [
+      "Dynamic product search and category filtering.",
+      "Shopping cart with quantity management.",
+      "Cart persistence using LocalStorage.",
+      "Delivery location selection interface.",
+      "Interactive checkout and order confirmation flow.",
+      "Responsive grocery shopping interface.",
+    ],
+    status: "Frontend Prototype",
+    github: "https://github.com/Farhan8271git/Grozo",
+    live: null,
+    featured: false,
+  },
+];
+
+export default projects;
