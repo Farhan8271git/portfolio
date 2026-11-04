@@ -40,7 +40,8 @@ const navigation = [
         id: 8,
         name: "Contact",
         href: "#contact"
-    }
+    },
+    
 ];
 
 export default navigation;

@@ -5,8 +5,8 @@ import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Education from "./components/sections/Education";
 import OpenSource from "./components/sections/OpenSource";
-
-
+import Experience from "./components/sections/Experience";
+import Contact from "./components/sections/Contact";
 
 
 function App() {
@@ -21,6 +21,8 @@ function App() {
         <Projects />
         <Education />
         <OpenSource />
+        <Experience />
+        <Contact /> 
         {/* Upcoming portfolio sections will go here */}
       </main>
     </>
